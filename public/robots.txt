@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Exclude private folders (jika ada folder aset yang tidak ingin muncul di pencarian)
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Host and Sitemap location
+Sitemap: https://hanzzmerchandise.com/sitemap.xml
