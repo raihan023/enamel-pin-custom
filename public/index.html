@@ -20,6 +20,35 @@
 
   gtag('config', 'AW-17212668625');
 </script>
+
+<!-- Event snippet for Click to call conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17212668625/GutmCJP4s9scENH10Y9A',
+      'value': 1.0,
+      'currency': 'IDR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+<!-- Event snippet for Contact conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17212668625/DgcCCJb4s9scENH10Y9A',
+      'value': 1.0,
+      'currency': 'IDR'
+  });
+</script>
+
     <meta name="description" content="Vendor Pin Enamel Custom Bandung. Produksi pin dural alloy berkualitas, ketebalan 1.5mm, minimal order 50 pcs. Pesan sekarang untuk souvenir eksklusif!">
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="assets/faviconhanzz.webp" type="image/webp">
